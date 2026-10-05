@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f9fa" />
+    <title>Dashboard điều hành · Coffee Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <script>
+      (function () {
+        var mode = 'system', palette = '';
+        try {
+          var s = JSON.parse(localStorage.getItem('coffee-theme')).state;
+          mode = s.mode; palette = s.palette;
+        } catch (e) {}
+        var dark = mode === 'dark' || (mode !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+        var root = document.documentElement;
+        root.dataset.theme = dark ? 'dark' : 'light';
+        if (/^(indigo|violet|rose|coffee)$/.test(palette)) root.dataset.palette = palette;
+        if (dark) document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d1211');
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

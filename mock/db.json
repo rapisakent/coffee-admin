@@ -1,0 +1,842 @@
+{
+  "customers": [
+    {
+      "id": "KH-0001",
+      "name": "The Workshop Coffee",
+      "type": "business",
+      "phone": "0901 234 567",
+      "email": "ops@workshopcoffee.vn",
+      "region": "TP. Hồ Chí Minh",
+      "machines": 4,
+      "spend": 1200,
+      "owner": "Trần Thu Hà"
+    },
+    {
+      "id": "KH-0002",
+      "name": "Là Việt Coffee",
+      "type": "business",
+      "phone": "0938 111 222",
+      "email": "info@laviet.coffee",
+      "region": "Đà Lạt",
+      "machines": 3,
+      "spend": 684,
+      "owner": "Lê Hoàng Nam"
+    },
+    {
+      "id": "KH-0003",
+      "name": "Nguyễn Thị Lan Anh",
+      "type": "individual",
+      "phone": "0977 888 999",
+      "email": "lananh@gmail.com",
+      "region": "Hà Nội",
+      "machines": 1,
+      "spend": 64.5,
+      "owner": "Trần Thu Hà"
+    },
+    {
+      "id": "KH-0004",
+      "name": "Katinat Saigon Kafe",
+      "type": "business",
+      "phone": "0909 555 000",
+      "email": "procurement@katinat.vn",
+      "region": "TP. Hồ Chí Minh",
+      "machines": 12,
+      "spend": 3000,
+      "owner": "Lê Hoàng Nam"
+    },
+    {
+      "id": "KH-0005",
+      "name": "Trần Văn Hậu",
+      "type": "individual",
+      "phone": "0912 345 678",
+      "email": "hau.tran@gmail.com",
+      "region": "Huế",
+      "machines": 1,
+      "spend": 41,
+      "owner": "Trần Thu Hà"
+    },
+    {
+      "id": "KH-0006",
+      "name": "Cộng Cà Phê - CN Quận 1",
+      "type": "business",
+      "phone": "0988 222 333",
+      "email": "q1@congcaphe.vn",
+      "region": "TP. Hồ Chí Minh",
+      "machines": 2,
+      "spend": 320,
+      "owner": "Lê Hoàng Nam"
+    },
+    {
+      "id": "KH-0007",
+      "name": "Hidden Gem Coffee",
+      "type": "business",
+      "phone": "0908 777 111",
+      "email": "hello@hiddengem.vn",
+      "region": "TP. Hồ Chí Minh",
+      "machines": 2,
+      "spend": 156,
+      "owner": "Lê Hoàng Nam"
+    },
+    {
+      "id": "KH-0008",
+      "name": "Lê Thị Mỹ Duyên",
+      "type": "individual",
+      "phone": "0933 444 555",
+      "email": "duyen.le@gmail.com",
+      "region": "Đà Nẵng",
+      "machines": 1,
+      "spend": 39.9,
+      "owner": "Lê Hoàng Nam"
+    }
+  ],
+  "products": [
+    {
+      "id": "MX-LM-GS3",
+      "name": "Máy pha La Marzocco GS3 (1 group)",
+      "group": "espresso",
+      "cost": 185,
+      "price": 245,
+      "stock": 6,
+      "unit": "máy",
+      "minStock": 2,
+      "supplier": "La Marzocco VN"
+    },
+    {
+      "id": "MX-LM-LINEA",
+      "name": "Máy pha La Marzocco Linea PB (2 group)",
+      "group": "espresso",
+      "cost": 310,
+      "price": 395,
+      "stock": 4,
+      "unit": "máy",
+      "minStock": 2,
+      "supplier": "La Marzocco VN"
+    },
+    {
+      "id": "MX-RP-APPIA",
+      "name": "Máy pha Nuova Simonelli Appia Life (2 group)",
+      "group": "espresso",
+      "cost": 95,
+      "price": 132,
+      "stock": 9,
+      "unit": "máy",
+      "minStock": 3,
+      "supplier": "Nuova Simonelli Asia"
+    },
+    {
+      "id": "MX-RC-SILVIA",
+      "name": "Máy pha Rancilio Silvia Pro X",
+      "group": "espresso",
+      "cost": 28,
+      "price": 39.5,
+      "stock": 12,
+      "unit": "máy",
+      "minStock": 5,
+      "supplier": "Rancilio Group"
+    },
+    {
+      "id": "GR-MZ-ZM",
+      "name": "Máy xay Mazzer ZM 2024",
+      "group": "grinder",
+      "cost": 42,
+      "price": 58,
+      "stock": 8,
+      "unit": "máy",
+      "minStock": 3,
+      "supplier": "Mazzer Luigi"
+    },
+    {
+      "id": "GR-EK-43",
+      "name": "Máy xay Mahlkönig EK43 S",
+      "group": "grinder",
+      "cost": 48,
+      "price": 65,
+      "stock": 3,
+      "unit": "máy",
+      "minStock": 3,
+      "supplier": "Mahlkönig"
+    },
+    {
+      "id": "BN-ET-SIDAMO",
+      "name": "Hạt Ethiopia Sidamo (1kg)",
+      "group": "beans",
+      "cost": 0.42,
+      "price": 0.65,
+      "stock": 240,
+      "unit": "kg",
+      "minStock": 50,
+      "supplier": "Rang xay An Thái"
+    },
+    {
+      "id": "BN-BL-HOUSE",
+      "name": "Hạt House Blend Đậm (1kg)",
+      "group": "beans",
+      "cost": 0.26,
+      "price": 0.38,
+      "stock": 38,
+      "unit": "kg",
+      "minStock": 80,
+      "supplier": "Rang xay An Thái"
+    },
+    {
+      "id": "BN-CL-GEISHA",
+      "name": "Hạt Colombia Geisha (250g)",
+      "group": "beans",
+      "cost": 0.48,
+      "price": 0.72,
+      "stock": 54,
+      "unit": "gói",
+      "minStock": 20,
+      "supplier": "Specialty Importers"
+    },
+    {
+      "id": "AC-TAMP-58",
+      "name": "Tay nén (tamper) inox 58mm",
+      "group": "accessory",
+      "cost": 0.32,
+      "price": 0.52,
+      "stock": 85,
+      "unit": "cái",
+      "minStock": 20,
+      "supplier": "Barista Tools Co."
+    },
+    {
+      "id": "AC-PITCHER-600",
+      "name": "Ca đánh sữa 600ml",
+      "group": "accessory",
+      "cost": 0.15,
+      "price": 0.265,
+      "stock": 120,
+      "unit": "cái",
+      "minStock": 30,
+      "supplier": "Barista Tools Co."
+    },
+    {
+      "id": "CS-FILTER-RO",
+      "name": "Lõi lọc nước RO cho máy pha",
+      "group": "supply",
+      "cost": 0.68,
+      "price": 1.1,
+      "stock": 22,
+      "unit": "bộ",
+      "minStock": 25,
+      "supplier": "AquaPure"
+    }
+  ],
+  "orders": [
+    {
+      "id": "DH-2026-0032",
+      "customerId": "KH-0006",
+      "customer": "Cộng Cà Phê - CN Quận 1",
+      "date": "2026-09-30",
+      "total": 132,
+      "status": "pending"
+    },
+    {
+      "id": "DH-2026-0031",
+      "customerId": "KH-0003",
+      "customer": "Nguyễn Thị Lan Anh",
+      "date": "2026-09-29",
+      "total": 39.5,
+      "status": "processing"
+    },
+    {
+      "id": "DH-2026-0030",
+      "customerId": "KH-0007",
+      "customer": "Hidden Gem Coffee",
+      "date": "2026-09-28",
+      "total": 58,
+      "status": "shipping"
+    },
+    {
+      "id": "DH-2026-0028",
+      "customerId": "KH-0004",
+      "customer": "Katinat Saigon Kafe",
+      "date": "2026-09-26",
+      "total": 264,
+      "status": "awaitingInstall"
+    },
+    {
+      "id": "DH-2026-0033",
+      "customerId": "KH-0005",
+      "customer": "Trần Văn Hậu",
+      "date": "2026-09-30",
+      "total": 41,
+      "status": "cancelled"
+    },
+    {
+      "id": "DH-2026-0021",
+      "customerId": "KH-0004",
+      "customer": "Katinat Saigon Kafe",
+      "date": "2026-09-21",
+      "total": 395,
+      "status": "completed"
+    }
+  ],
+  "stock-movements": [],
+  "serials": [
+    {
+      "id": "LM-LPB-2026-00042",
+      "productId": "MX-LM-LINEA",
+      "product": "Máy pha La Marzocco Linea PB (2 group)",
+      "customerId": "KH-0004",
+      "customer": "Katinat Saigon Kafe",
+      "status": "warranty"
+    },
+    {
+      "id": "MK-EK43-2026-00088",
+      "productId": "GR-EK-43",
+      "product": "Máy xay Mahlkönig EK43 S",
+      "customerId": "KH-0002",
+      "customer": "Là Việt Coffee",
+      "status": "repairing"
+    },
+    {
+      "id": "NS-APL-2026-00133",
+      "productId": "MX-RP-APPIA",
+      "product": "Máy pha Nuova Simonelli Appia Life (2 group)",
+      "customerId": "KH-0006",
+      "customer": "Cộng Cà Phê - CN Quận 1",
+      "status": "awaitingInstall"
+    }
+  ],
+  "installs": [
+    {
+      "id": "LD-001",
+      "customerId": "KH-0006",
+      "customer": "Cộng Cà Phê - CN Quận 1",
+      "device": "Máy pha Nuova Simonelli Appia Life (2 group)",
+      "date": "2026-09-30",
+      "tech": "Lê Hoàng Nam",
+      "status": "scheduled"
+    },
+    {
+      "id": "LD-002",
+      "customerId": "KH-0007",
+      "customer": "Hidden Gem Coffee",
+      "device": "Máy xay Mazzer ZM 2024",
+      "date": "2026-10-02",
+      "tech": "Trần Thu Hà",
+      "status": "scheduled"
+    },
+    {
+      "id": "LD-003",
+      "customerId": "KH-0004",
+      "customer": "Katinat Saigon Kafe",
+      "device": "Máy pha Nuova Simonelli Appia Life (2 group)",
+      "date": "2026-10-03",
+      "tech": "Lê Hoàng Nam",
+      "status": "scheduled"
+    }
+  ],
+  "warranty": [
+    {
+      "id": "BH-001",
+      "serial": "LM-LPB-2026-00042",
+      "customerId": "KH-0004",
+      "customer": "Katinat Saigon Kafe",
+      "device": "Máy pha La Marzocco Linea PB",
+      "status": "repairing",
+      "owner": "Lê Hoàng Nam"
+    },
+    {
+      "id": "BH-002",
+      "serial": "MK-EK43-2026-00088",
+      "customerId": "KH-0002",
+      "customer": "Là Việt Coffee",
+      "device": "Mahlkönig EK43 S",
+      "status": "inspecting",
+      "owner": "Trần Thu Hà"
+    }
+  ],
+  "leads": [
+    {
+      "id": "TN-001",
+      "name": "Morning Brew Coffee",
+      "phone": "0900 100 200",
+      "email": "hello@example.com",
+      "source": "Website",
+      "owner": "Trần Thu Hà",
+      "date": "2026-10-05",
+      "status": "new"
+    },
+    {
+      "id": "TN-002",
+      "name": "The Corner Roastery",
+      "phone": "0900 200 300",
+      "email": "corner@example.com",
+      "source": "Giới thiệu",
+      "owner": "Lê Hoàng Nam",
+      "date": "2026-10-06",
+      "status": "consulting"
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "CH-001",
+      "name": "Trang bị máy cho chi nhánh mới",
+      "customerId": "KH-0004",
+      "customer": "Katinat Saigon Kafe",
+      "amount": 528,
+      "probability": 70,
+      "owner": "Lê Hoàng Nam",
+      "date": "2026-10-15",
+      "status": "negotiating"
+    },
+    {
+      "id": "CH-002",
+      "name": "Nâng cấp máy xay",
+      "customerId": "KH-0007",
+      "customer": "Hidden Gem Coffee",
+      "amount": 58,
+      "probability": 40,
+      "owner": "Trần Thu Hà",
+      "date": "2026-10-20",
+      "status": "consulting"
+    }
+  ],
+  "quotes": [
+    {
+      "id": "BG-001",
+      "name": "Bộ máy pha và máy xay",
+      "customerId": "KH-0001",
+      "customer": "The Workshop Coffee",
+      "amount": 303,
+      "validUntil": "2026-10-15",
+      "status": "sent"
+    },
+    {
+      "id": "BG-002",
+      "name": "Máy pha Appia Life 2GR",
+      "customerId": "KH-0004",
+      "customer": "Katinat Saigon Kafe",
+      "amount": 132,
+      "validUntil": "2026-10-18",
+      "status": "draft"
+    }
+  ],
+  "categories": [
+    {
+      "id": "DM-001",
+      "name": "Máy pha cà phê",
+      "status": "active"
+    },
+    {
+      "id": "DM-002",
+      "name": "Máy xay",
+      "status": "active"
+    },
+    {
+      "id": "DM-003",
+      "name": "Hạt cà phê",
+      "status": "active"
+    },
+    {
+      "id": "DM-004",
+      "name": "Phụ kiện",
+      "status": "active"
+    },
+    {
+      "id": "DM-005",
+      "name": "Vật tư tiêu hao",
+      "status": "active"
+    }
+  ],
+  "dashboard": {
+    "monthly": [
+      {
+        "month": 4,
+        "revenue": 470,
+        "orders": 9
+      },
+      {
+        "month": 5,
+        "revenue": 660,
+        "orders": 14
+      },
+      {
+        "month": 6,
+        "revenue": 570,
+        "orders": 12
+      },
+      {
+        "month": 7,
+        "revenue": 800,
+        "orders": 19
+      },
+      {
+        "month": 8,
+        "revenue": 934,
+        "orders": 25
+      },
+      {
+        "month": 9,
+        "revenue": 1268,
+        "orders": 34
+      }
+    ],
+    "newCustomers": {
+      "current": 6,
+      "previous": 5
+    },
+    "revenueByGroup": [
+      {
+        "name": "Máy pha",
+        "value": 68
+      },
+      {
+        "name": "Máy xay",
+        "value": 16
+      },
+      {
+        "name": "Hạt cà phê",
+        "value": 12
+      },
+      {
+        "name": "Phụ kiện & vật tư",
+        "value": 4
+      }
+    ],
+    "lowStock": [
+      {
+        "name": "Máy xay Mahlkönig EK43 S",
+        "meta": "3 / 3 máy"
+      },
+      {
+        "name": "Hạt House Blend Đậm (1kg)",
+        "meta": "38 / 80 kg"
+      },
+      {
+        "name": "Lõi lọc nước RO cho máy pha",
+        "meta": "22 / 25 bộ"
+      }
+    ],
+    "pendingInstalls": [
+      {
+        "name": "Cộng Cà Phê - CN Quận 1",
+        "meta": "2026-09-30"
+      },
+      {
+        "name": "Hidden Gem Coffee",
+        "meta": "2026-10-02"
+      },
+      {
+        "name": "Katinat Saigon Kafe",
+        "meta": "2026-10-03"
+      }
+    ],
+    "inRepair": [
+      {
+        "name": "LM-LPB-2026-00042",
+        "meta": "Katinat Saigon Kafe"
+      },
+      {
+        "name": "MK-EK43-2026-00088",
+        "meta": "Là Việt Coffee"
+      }
+    ],
+    "recentOrders": [
+      {
+        "customer": "Cộng Cà Phê - CN Quận 1",
+        "code": "DH-2026-0032",
+        "status": "pending"
+      },
+      {
+        "customer": "Nguyễn Thị Lan Anh",
+        "code": "DH-2026-0031",
+        "status": "processing"
+      },
+      {
+        "customer": "Hidden Gem Coffee",
+        "code": "DH-2026-0030",
+        "status": "shipping"
+      },
+      {
+        "customer": "Katinat Saigon Kafe",
+        "code": "DH-2026-0028",
+        "status": "awaitingInstall"
+      },
+      {
+        "customer": "Trần Văn Hậu",
+        "code": "DH-2026-0033",
+        "status": "cancelled"
+      },
+      {
+        "customer": "Katinat Saigon Kafe",
+        "code": "DH-2026-0021",
+        "status": "completed"
+      }
+    ],
+    "topProducts": [
+      {
+        "name": "Appia Life 2GR",
+        "category": "Máy pha cà phê",
+        "sold": 9,
+        "revenue": 1200
+      },
+      {
+        "name": "Linea PB",
+        "category": "Máy pha cà phê",
+        "sold": 4,
+        "revenue": 1600
+      },
+      {
+        "name": "Mazzer ZM",
+        "category": "Máy xay",
+        "sold": 7,
+        "revenue": 406
+      },
+      {
+        "name": "Silvia Pro X",
+        "category": "Máy pha cà phê",
+        "sold": 12,
+        "revenue": 474
+      },
+      {
+        "name": "Hạt House Blend",
+        "category": "Hạt cà phê",
+        "sold": 420,
+        "revenue": 163.8
+      }
+    ],
+    "upcomingInstalls": [
+      {
+        "date": "2026-09-30",
+        "customer": "Cộng Cà Phê - CN Quận 1",
+        "machine": "Máy pha Nuova Simonelli Appia Life (2 group)"
+      },
+      {
+        "date": "2026-10-02",
+        "customer": "Hidden Gem Coffee",
+        "machine": "Máy xay Mazzer ZM 2024"
+      },
+      {
+        "date": "2026-10-03",
+        "customer": "Katinat Saigon Kafe",
+        "machine": "Máy pha Nuova Simonelli Appia Life (2 group)"
+      }
+    ]
+  },
+  "price-list": [
+    {
+      "id": "GIA-001",
+      "productId": "MX-LM-GS3",
+      "product": "Máy pha La Marzocco GS3 (1 group)",
+      "segment": "retail",
+      "price": 245,
+      "from": "2026-10-01",
+      "to": "2026-12-31"
+    },
+    {
+      "id": "GIA-002",
+      "productId": "MX-LM-GS3",
+      "product": "Máy pha La Marzocco GS3 (1 group)",
+      "segment": "dealer",
+      "price": 228,
+      "from": "2026-10-01",
+      "to": "2026-12-31"
+    },
+    {
+      "id": "GIA-003",
+      "productId": "BN-BL-HOUSE",
+      "product": "Hạt House Blend Đậm (1kg)",
+      "segment": "business",
+      "price": 0.365,
+      "from": "2026-10-01",
+      "to": "2026-12-31"
+    }
+  ],
+  "stocktakes": [
+    {
+      "id": "KK-001",
+      "productId": "BN-BL-HOUSE",
+      "product": "Hạt House Blend Đậm (1kg)",
+      "status": "pending",
+      "book": 38,
+      "counted": 36,
+      "date": "2026-10-02",
+      "owner": "Trần Thu Hà"
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "NCC-001",
+      "name": "La Marzocco VN",
+      "category": "Máy pha cà phê",
+      "phone": "028 1000 2000",
+      "email": "sales@example.com",
+      "region": "TP. Hồ Chí Minh",
+      "terms": "30 ngày",
+      "active": true
+    },
+    {
+      "id": "NCC-002",
+      "name": "Rang xay An Thái",
+      "category": "Hạt cà phê",
+      "phone": "0262 100 200",
+      "email": "beans@example.com",
+      "region": "Đắk Lắk",
+      "terms": "15 ngày",
+      "active": true
+    },
+    {
+      "id": "NCC-003",
+      "name": "Barista Tools Co.",
+      "category": "Phụ kiện",
+      "phone": "028 2000 3000",
+      "email": "tools@example.com",
+      "region": "TP. Hồ Chí Minh",
+      "terms": "Thanh toán ngay",
+      "active": true
+    }
+  ],
+  "purchases": [
+    {
+      "id": "MH-001",
+      "name": "Bổ sung hạt House Blend",
+      "supplierId": "NCC-002",
+      "supplier": "Rang xay An Thái",
+      "amount": 26,
+      "date": "2026-10-07",
+      "status": "ordered"
+    },
+    {
+      "id": "MH-002",
+      "name": "Nhập máy La Marzocco GS3",
+      "supplierId": "NCC-001",
+      "supplier": "La Marzocco VN",
+      "amount": 370,
+      "date": "2026-10-12",
+      "status": "pending"
+    }
+  ],
+  "maintenance": [
+    {
+      "id": "BT-001",
+      "customerId": "KH-0001",
+      "customer": "The Workshop Coffee",
+      "device": "La Marzocco GS3",
+      "date": "2026-10-08",
+      "tech": "Lê Hoàng Nam",
+      "status": "scheduled"
+    },
+    {
+      "id": "BT-002",
+      "customerId": "KH-0002",
+      "customer": "Là Việt Coffee",
+      "device": "Mahlkönig EK43 S",
+      "date": "2026-10-10",
+      "tech": "Trần Thu Hà",
+      "status": "awaiting"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "TK-001",
+      "title": "Máy pha không lên áp suất",
+      "customerId": "KH-0004",
+      "customer": "Katinat Saigon Kafe",
+      "priority": "high",
+      "owner": "Lê Hoàng Nam",
+      "date": "2026-10-02",
+      "status": "handling"
+    },
+    {
+      "id": "TK-002",
+      "title": "Hướng dẫn vệ sinh máy xay",
+      "customerId": "KH-0007",
+      "customer": "Hidden Gem Coffee",
+      "priority": "normal",
+      "owner": "Trần Thu Hà",
+      "date": "2026-10-02",
+      "status": "new"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "TC-001",
+      "title": "Thu tiền máy pha Katinat",
+      "type": "in",
+      "amount": 132,
+      "method": "Chuyển khoản",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "TC-002",
+      "title": "Thanh toán hạt cà phê",
+      "type": "out",
+      "amount": 26,
+      "method": "Chuyển khoản",
+      "date": "2026-10-02"
+    }
+  ],
+  "debts": [
+    {
+      "id": "CN-001",
+      "party": "Katinat Saigon Kafe",
+      "kind": "receivable",
+      "total": 264,
+      "paid": 132,
+      "due": "2026-10-15"
+    },
+    {
+      "id": "CN-002",
+      "party": "La Marzocco VN",
+      "kind": "payable",
+      "total": 370,
+      "paid": 185,
+      "due": "2026-10-20"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "HD-001",
+      "orderId": "DH-2026-0028",
+      "customerId": "KH-0004",
+      "customer": "Katinat Saigon Kafe",
+      "amount": 264,
+      "date": "2026-10-01",
+      "status": "partial"
+    },
+    {
+      "id": "HD-002",
+      "orderId": "DH-2026-0030",
+      "customerId": "KH-0007",
+      "customer": "Hidden Gem Coffee",
+      "amount": 58,
+      "date": "2026-10-02",
+      "status": "unpaid"
+    }
+  ],
+  "users": [
+    {
+      "id": "ND-001",
+      "name": "Quản trị viên",
+      "email": "admin@example.com",
+      "role": "Quản trị viên",
+      "active": true
+    },
+    {
+      "id": "ND-002",
+      "name": "Trần Thu Hà",
+      "email": "ha@example.com",
+      "role": "Kinh doanh",
+      "active": true
+    },
+    {
+      "id": "ND-003",
+      "name": "Lê Hoàng Nam",
+      "email": "nam@example.com",
+      "role": "Kỹ thuật",
+      "active": true
+    }
+  ],
+  "activity": [],
+  "settings": {
+    "name": "Coffee Admin",
+    "email": "hello@example.com",
+    "phone": "028 1234 5678",
+    "address": "TP. Hồ Chí Minh",
+    "currency": "VND"
+  }
+}

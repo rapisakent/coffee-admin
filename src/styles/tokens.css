@@ -1,0 +1,200 @@
+/*
+ * Design tokens — sampled from the Figma "DB" frame (Coffee Việt Ý).
+ * Layer 1 primitives (raw values) → layer 2 semantic (what components use).
+ * Dark theme only overrides layer 2.
+ */
+:root {
+  /* primitives: neutrals */
+  --gray-0: #ffffff;
+  --gray-50: #f7f9fa;
+  --gray-100: #f0f0f0;
+  --gray-200: #e5e7e8;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-700: #374151;
+  --gray-900: #0b1220;
+
+  /* primitives: brand teal */
+  --teal-50: #ecf4f2;
+  --teal-100: #d9eae6;
+  --teal-300: #76a69e;
+  --teal-500: #3a8a7d;
+  --teal-600: #2f7468;
+
+  /* primitives: chart / status hues */
+  --mint-300: #85c3a0;
+  --teal-ring: #578e87;
+  --amber-300: #e5bb75;
+  --amber-500: #d19a45;
+  --slate-300: #97a5b2;
+
+  /* semantic: surfaces & text */
+  --bg: var(--gray-50);
+  --surface: var(--gray-0);
+  --surface-2: #f1f4f5;
+  --border: var(--gray-200);
+  --divider: var(--gray-100);
+  --text: var(--gray-900);
+  --text-2: var(--gray-700);
+  --muted: var(--gray-500);
+  --subtle: var(--gray-400);
+
+  /* semantic: brand */
+  --primary: var(--teal-500);
+  --primary-strong: var(--teal-600);
+  --primary-soft: var(--teal-50);
+  --on-primary: #ffffff;
+  --amber: var(--amber-500);
+  --dot: #ef4444;
+
+  /* semantic: status pills (bg sampled, fg derived from same hue) */
+  --warn-bg: #fbf3e4;
+  --warn-fg: #94702a;
+  --info-bg: #eef2ff;
+  --info-fg: #5b6590;
+  --danger-bg: #faeeee;
+  --danger-fg: #b45f63;
+  --success-bg: var(--teal-50);
+  --success-fg: var(--teal-600);
+
+  /* semantic: charts */
+  --chart-bar: var(--teal-300);
+  --chart-line: var(--amber-300);
+  --chart-area: var(--teal-100);
+  --chart-1: var(--teal-ring);
+  --chart-2: var(--mint-300);
+  --chart-3: var(--amber-300);
+  --chart-4: var(--slate-300);
+
+  --shadow-pop: 0 12px 32px rgb(11 18 32 / 0.12), 0 2px 6px rgb(11 18 32 / 0.06);
+
+  --sidebar-w: 244px;
+  --topbar-h: 64px;
+  --radius: 12px;
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --bg: #0d1211;
+  --surface: #141a19;
+  --surface-2: #1c2523;
+  --border: #25302d;
+  --divider: #1f2927;
+  --text: #e8eceb;
+  --text-2: #c8d0ce;
+  --muted: #92a09c;
+  --subtle: #6d7b77;
+
+  --primary: #62b3a3;
+  --primary-strong: #86c9bb;
+  --primary-soft: #1a2c28;
+  --on-primary: #0d1211;
+  --amber: #e5bb75;
+  --dot: #f87171;
+
+  --warn-bg: #33281a;
+  --warn-fg: #e5bb75;
+  --info-bg: #1e2535;
+  --info-fg: #9db0e0;
+  --danger-bg: #351e1e;
+  --danger-fg: #ec9a9a;
+  --success-bg: #1a2c28;
+  --success-fg: #86c9bb;
+
+  --chart-bar: #5f9d91;
+  --chart-line: #e5bb75;
+  --chart-area: #1d3732;
+  --chart-1: #6fa8a0;
+  --chart-2: #3f7a68;
+  --chart-3: #e5bb75;
+  --chart-4: #7c8aa0;
+
+  --shadow-pop: 0 12px 32px rgb(0 0 0 / 0.5);
+  color-scheme: dark;
+}
+
+/* ---------- palettes: override brand + chart tokens only ---------- */
+/* light: [data-palette] also scopes the swatches in the account menu */
+[data-palette='teal'] {
+  --primary: #3a8a7d;
+  --primary-strong: #2f7468;
+  --primary-soft: #ecf4f2;
+  --chart-bar: #76a69e;
+  --chart-area: #d9eae6;
+  --chart-1: #578e87;
+  --chart-2: #85c3a0;
+}
+[data-palette='indigo'] {
+  --primary: #4f63d2;
+  --primary-strong: #3d4fb8;
+  --primary-soft: #eceffc;
+  --chart-bar: #8c9be0;
+  --chart-area: #dfe4f8;
+  --chart-1: #5a6dd6;
+  --chart-2: #9fabea;
+}
+[data-palette='violet'] {
+  --primary: #7a5bd0;
+  --primary-strong: #6444b8;
+  --primary-soft: #f0ecfb;
+  --chart-bar: #a791e0;
+  --chart-area: #e7e0f8;
+  --chart-1: #7f62d4;
+  --chart-2: #b5a3e8;
+}
+[data-palette='rose'] {
+  --primary: #cf4f77;
+  --primary-strong: #b53a62;
+  --primary-soft: #fbecf1;
+  --chart-bar: #e098b0;
+  --chart-area: #f6dfe7;
+  --chart-1: #cf5b80;
+  --chart-2: #e8a3ba;
+}
+[data-palette='coffee'] {
+  --primary: #8a5a3c;
+  --primary-strong: #6f452b;
+  --primary-soft: #f5ede7;
+  --chart-bar: #b58d72;
+  --chart-area: #eadfd6;
+  --chart-1: #8a5a3c;
+  --chart-2: #c4a48c;
+}
+
+/* dark */
+:root[data-theme='dark'][data-palette='indigo'] {
+  --primary: #8c9bf0;
+  --primary-strong: #aab5f5;
+  --primary-soft: #1d2238;
+  --chart-bar: #6f7fd6;
+  --chart-area: #232a4a;
+  --chart-1: #8c9bf0;
+  --chart-2: #4c5aa8;
+}
+:root[data-theme='dark'][data-palette='violet'] {
+  --primary: #a78bf0;
+  --primary-strong: #bfa9f5;
+  --primary-soft: #251d3a;
+  --chart-bar: #8a70d6;
+  --chart-area: #2b2347;
+  --chart-1: #a78bf0;
+  --chart-2: #5d4aa8;
+}
+:root[data-theme='dark'][data-palette='rose'] {
+  --primary: #ee7f9f;
+  --primary-strong: #f4a0b8;
+  --primary-soft: #38202a;
+  --chart-bar: #d06a89;
+  --chart-area: #3f2531;
+  --chart-1: #ee7f9f;
+  --chart-2: #a24a66;
+}
+:root[data-theme='dark'][data-palette='coffee'] {
+  --primary: #c99a78;
+  --primary-strong: #ddb596;
+  --primary-soft: #2e2219;
+  --chart-bar: #a67c5e;
+  --chart-area: #35291f;
+  --chart-1: #c99a78;
+  --chart-2: #7a5a43;
+}
