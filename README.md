@@ -1,6 +1,8 @@
 # Coffee Admin
 
-CRM & ERP cho quán / nhà phân phối cà phê. React 19 + TypeScript + Vite, state bằng Zustand.
+CRM & ERP cho quán cà phê nhỏ và nhà phân phối máy pha cà phê: khách hàng, bán hàng, kho, mua hàng, bảo hành/bảo trì, thu chi, công nợ, hóa đơn, báo cáo và nhật ký hoạt động. Hơn 25 màn hình dựng từ file Figma "Coffee Việt Ý", có chế độ sáng/tối và nhiều bảng màu.
+
+Công nghệ: React 19, TypeScript (strict), Vite, Zustand, axios, React Router. Dữ liệu đi qua một REST API giả lập đọc/ghi `mock/db.json` (có thể đổi sang backend thật bằng `VITE_API_URL`).
 
 ```bash
 npm install

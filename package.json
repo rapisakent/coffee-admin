@@ -1,6 +1,7 @@
 {
   "name": "coffee-admin",
   "private": true,
+  "description": "Coffee Admin — CRM & ERP admin UI for small coffee shops and espresso-machine distributors, built from a Figma design with React, TypeScript, Vite and Zustand, backed by a JSON-file mock REST API.",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
